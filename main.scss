@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600;700&family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'poppins';
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background: red;
+    //color: rgb(2, 2, 43);
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+.logo h2{
+    margin-left: 30px;
+}
+nav ul li{
+    margin-right: 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 30px;
+    font-size: 15px;
+    justify-content: space-evenly;
+    margin-top: 0;
+
+}
+
+.container .div1{
+    flex-basis: 45%;
+}
+.container .div2{
+    flex-basis: 50%;
+}
+
+.tit{
+    margin: 0;
+    padding: 0;
+}
+.tit h2{
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+nav ul li.menu{
+    display: none;
+}
+
+@media(max-width:1350px){
+    .container{
+        flex-direction: column;
+    }
+    .div1,.div2{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width:700px){
+
+    nav ul li.hide{
+        display: none;
+    }
+    nav ul li.menu{
+        display: block;
+    }
+
+}
